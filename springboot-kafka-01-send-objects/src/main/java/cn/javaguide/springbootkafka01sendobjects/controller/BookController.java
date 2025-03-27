@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-/**
- * @author shuang.kou
- */
 @RestController
 @RequestMapping(value = "/book")
 public class BookController {
@@ -30,6 +27,6 @@ public class BookController {
     @PostMapping
     public void sendMessageToKafkaTopic(@RequestParam("name") String name) {
         this.producer.sendMessage(myTopic, new Book(atomicLong.addAndGet(1), name));
-        this.producer.sendMessage(myTopic2, new Book(atomicLong.addAndGet(1), name));
+//        this.producer.sendMessage(myTopic2, new Book(atomicLong.addAndGet(1), name));
     }
 }

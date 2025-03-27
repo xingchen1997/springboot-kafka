@@ -11,5 +11,5 @@ spring:
       retries: 3  #  重试次数
 kafka:
   topic:
-    my-topic: my-topic
+    my-topic: test-topic
     my-topic2: my-topic2

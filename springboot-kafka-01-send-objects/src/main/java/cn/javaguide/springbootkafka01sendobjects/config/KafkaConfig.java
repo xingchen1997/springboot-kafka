@@ -7,9 +7,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.support.converter.RecordMessageConverter;
 import org.springframework.kafka.support.converter.StringJsonMessageConverter;
 
-/**
- * @author shuang.kou
- */
 @Configuration
 public class KafkaConfig {
 
